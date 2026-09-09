@@ -50,6 +50,13 @@
                         <p>Apartado para casos especiales que requieren atención adicional.</p>
                     </div>
                 </article>
+                 <article class="support-item">
+                    <span class="support-number">05</span>
+                    <div>
+                        <h3><a href="{{ route('soporte.modulo5') }}">Tablas del SIS </a></h3>
+                        <p>Conoce las tablas que mayormente se utilizan en el sistema SIS.</p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>

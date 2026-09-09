@@ -27,4 +27,9 @@ Route::get('/soporte/modulo4', function () {
     return view('soporte/modulo4');
 })->name('soporte.modulo4');
 
+Route::get('/soporte/modulo5', function () {
+    return view('soporte/modulo5');
+})->name('soporte.modulo5');
+
+
 Route::get('/siap', [SiapController::class, 'index'])->name('siap.show');
