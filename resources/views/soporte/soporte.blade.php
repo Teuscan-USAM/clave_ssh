@@ -39,7 +39,7 @@
                     <span class="support-number">03</span>
                     <div>
                         <h3><a href="{{ route('soporte.modulo3') }}">Soporte para problemas en la base de datos</a></h3>
-                        <p>--Limpiar cache produccion SIS--</p>
+                        <p>--Limpiar cache en produccion SIS--</p>
                         <p>php app/console cache:clear --env=prod; php app/console assets:install --symlink --env=prod; php app/console cache:clear; php app/console assets:install --symlink;</p>
                     </div>
                 </article>

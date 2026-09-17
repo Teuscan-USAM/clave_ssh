@@ -55,7 +55,7 @@
                  SELECT * FROM eme_obstetricia;
 
                  -- 5. MATERNO / PERINATAL
-                 SELECT * FROM sec_dato_embarazo;
+                 SELECT * FROM sec_dato_embarazo;           -- Aqui esta la formula obstetrica
                  SELECT * FROM sec_clap_perinatal scp;
                  SELECT * FROM sec_partograma sp;
                  SELECT * FROM public.sec_parto_aborto_perinatal;
@@ -68,6 +68,10 @@
                  SELECT * FROM mnt_ciq ORDER BY id DESC;
                  SELECT * FROM sec_cirugia sc;
                  SELECT * FROM ctl_piezas_intervenidas;
+
+                 SELECT * FROM cit_distribucion_procedimiento where yrs = 2026 and mes in(10,11,12) and id_empleado in (00,123,456,789);
+                 --Por si tiene una cita de procedimiento y se quiere eliminar, primero se debe eliminar la cita de procedimiento y luego la distribución 
+                 SELECT * FROM cit_citas_procedimientos ccp where ccp.id_distribucion_procedimiento = 6979 and id_estado = 9;
 
                  -- 7. ENFERMERÍA, RECETAS Y DIETAS
                  SELECT * FROM sec_anotacion_enfermeria sae;
