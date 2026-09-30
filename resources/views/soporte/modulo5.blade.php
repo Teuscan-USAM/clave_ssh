@@ -67,7 +67,10 @@
                  SELECT * FROM public.mnt_tipo_procedimiento AS mtp;
                  SELECT * FROM mnt_ciq ORDER BY id DESC;
                  SELECT * FROM sec_cirugia sc;
+                 SELECT * FROM sec_cirugia_reporte scr; -- Tabla donde se guarda los reportes de la operación
+                 SELECT * FROM sec_cirugia_reporte_procedimiento scrp;
                  SELECT * FROM ctl_piezas_intervenidas;
+
 
                  SELECT * FROM cit_distribucion_procedimiento where yrs = 2026 and mes in(10,11,12) and id_empleado in (00,123,456,789);
                  --Por si tiene una cita de procedimiento y se quiere eliminar, primero se debe eliminar la cita de procedimiento y luego la distribución 
